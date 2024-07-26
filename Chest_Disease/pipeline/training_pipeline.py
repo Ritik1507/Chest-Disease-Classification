@@ -1,8 +1,8 @@
 import sys
 
 from Chest_Disease.components.data_ingestion import DataIngestion
-from Chest_Disease.data_transformation import DataTransformation
-from Chest_Disease.model_training import ModelTrainer
+from Chest_Disease.components.data_transformation import DataTransformation
+from Chest_Disease.components.model_training import ModelTrainer
 
 from Chest_Disease.entity.artifact_entity import (
     DataIngestionArtifact,
