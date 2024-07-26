@@ -1,5 +1,5 @@
 # Chest Disease Classification
-# Data link: [https://drive.google.com/file/d/1pfIAlurfeqFTbirUZ5v_vapIoGPgRiXY/view?usp=sharing](https://github.com/Ritik1507/Data/blob/main/chest_disease_data.zip)
+# Data link: [https://github.com/Ritik1507/Data/blob/main/chest_disease_data.zip]
 
 # Workflows
   1. constants
