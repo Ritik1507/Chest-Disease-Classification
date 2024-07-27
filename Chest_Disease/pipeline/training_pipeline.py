@@ -170,6 +170,7 @@ class TrainPipeline:
 
         try:
             data_ingestion_artifact: DataIngestionArtifact = self.start_data_ingestion()
+            
             data_transformation_artifact: DataTransformationArtifact = (
                 self.start_data_transformation(
                     data_ingestion_artifact=data_ingestion_artifact
