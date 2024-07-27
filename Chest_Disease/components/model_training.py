@@ -22,7 +22,6 @@ from Chest_Disease.ml.model.arch import Net
 
 
 
-
 class ModelTrainer:
     def __init__(
         self,
@@ -36,9 +35,6 @@ class ModelTrainer:
         )
 
         self.model: Module = Net()
-
-
-
 
     def train(self, optimizer: Optimizer) -> None:
         """
@@ -95,7 +91,6 @@ class ModelTrainer:
         except Exception as e:
             raise XRayException(e, sys)
         
-
 
 
     def test(self) -> None:
@@ -171,7 +166,6 @@ class ModelTrainer:
             raise XRayException(e, sys)
         
 
-        
 
     def initiate_model_trainer(self) -> ModelTrainerArtifact:
         try:
@@ -203,6 +197,7 @@ class ModelTrainer:
             os.makedirs(self.model_trainer_config.artifact_dir, exist_ok=True)
 
             torch.save(model, self.model_trainer_config.trained_model_path)
+            os.system(f"cp {self.model_trainer_config.trained_model_path} model/")
 
             train_transforms_obj = joblib.load(
                 self.data_transformation_artifact.train_transform_file_path
