@@ -1,6 +1,6 @@
 ﻿import sys
 
-from Chest_Disease.cloud_storage.s3_ops import S3Operation
+from Chest_Disease.cloud_storage.s3_operation import S3Operation
 from Chest_Disease.constant.training_pipeline import *
 from Chest_Disease.entity.artifact_entity import DataIngestionArtifact
 from Chest_Disease.entity.config_entity import DataIngestionConfig

@@ -52,7 +52,7 @@ PIN_MEMORY: bool = True
 
 #model trainer constants
 
-TRAINED_MODEL_DIR: str = "trained_model"
+TRAINED_MODEL_DIR: str = "model"
 
 TRAINED_MODEL_NAME: str = "model.pt"
 
@@ -62,7 +62,7 @@ STEP_SIZE: int = 6
 
 GAMMA: int = 0.5
 
-EPOCH: int = 2
+EPOCH: int = 200
 
 
 #bentoml 

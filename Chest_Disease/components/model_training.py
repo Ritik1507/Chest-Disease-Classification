@@ -1,5 +1,6 @@
 ﻿import os
 import sys
+import shutil
 
 import bentoml
 import joblib
@@ -197,7 +198,7 @@ class ModelTrainer:
             os.makedirs(self.model_trainer_config.artifact_dir, exist_ok=True)
 
             torch.save(model, self.model_trainer_config.trained_model_path)
-            os.system(f"cp {self.model_trainer_config.trained_model_path} model/")
+            shutil.copy(self.model_trainer_config.trained_model_path, 'model/')
 
             train_transforms_obj = joblib.load(
                 self.data_transformation_artifact.train_transform_file_path

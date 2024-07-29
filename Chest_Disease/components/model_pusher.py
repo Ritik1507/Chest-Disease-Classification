@@ -1,10 +1,11 @@
 ﻿import sys
-from Chest_Disease.cloud_storage.s3_ops import S3Operation
+from botocore.exceptions import NoCredentialsError, ClientError
 
+from Chest_Disease.cloud_storage.s3_ops import S3Operation
 from Chest_Disease.entity.config_entity import ModelPusherConfig
 from Chest_Disease.exception import XRayException
 from Chest_Disease.logger import logging
-
+from Chest_Disease.constant.training_pipeline import *
 
 class ModelPusher:
     def __init__(self,model_pusher_config: ModelPusherConfig):
@@ -29,7 +30,7 @@ class ModelPusher:
             self.s3.upload_file(
                 "model/model.pt",
                 "model.pt",
-                "lungxray24",
+                "chest-disease",
                 remove=False,
             )
             logging.info("Uploaded best model to s3 bucket")
