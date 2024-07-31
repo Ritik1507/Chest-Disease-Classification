@@ -1,4 +1,7 @@
 # Chest Disease Classification
+
+# TRY HERE : [https://lungsdiseaseclassification.streamlit.app/]
+
 # Data link: [https://github.com/Ritik1507/Data/blob/main/chest_disease_data.zip]
 
 # Workflows
@@ -41,4 +44,4 @@ AWS_SECRET_ACCESS_KEY= ***
 ```
 AWS_REGION = 
 ```
-# TRY HERE : [https://lungsdiseaseclassification.streamlit.app/]
+
