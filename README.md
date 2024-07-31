@@ -2,7 +2,7 @@
 
 # TRY HERE : [https://lungsdiseaseclassification.streamlit.app/]
 
-# Data link: [https://github.com/Ritik1507/Data/blob/main/chest_disease_data.zip]
+# Data link: https://github.com/Ritik1507/Data/blob/main/chest_disease_data.zip
 
 # Workflows
   1. constants
