@@ -41,3 +41,4 @@ AWS_SECRET_ACCESS_KEY= ***
 ```
 AWS_REGION = 
 ```
+# TRY HERE : [https://lungsdiseaseclassification.streamlit.app/]
